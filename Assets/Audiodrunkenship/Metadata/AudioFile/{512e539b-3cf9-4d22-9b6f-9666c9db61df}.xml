@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.07.00">
+    <object class="AudioFile" id="{512e539b-3cf9-4d22-9b6f-9666c9db61df}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.69895691609977328</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/Lampskarm2 {be3e06ff-ec5e-47bd-a2b8-bcbd9def3ee1}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{ab77705a-3170-4fb5-8e8c-65de85c6dcb6}</destination>
+        </relationship>
+    </object>
+</objects>

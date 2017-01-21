@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.07.00">
+    <object class="AudioFile" id="{893dc863-5882-49ee-9846-0918d5a72141}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.25</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/metallfotsteg2 {b0a31d04-685f-4f46-abeb-d75c2ea95f61}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{ab77705a-3170-4fb5-8e8c-65de85c6dcb6}</destination>
+        </relationship>
+    </object>
+</objects>
