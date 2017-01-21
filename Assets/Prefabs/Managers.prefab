@@ -164,6 +164,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RunInEditMode: 0
   WavesAmpxPerxAmpzPerz:
-  - {x: 4, y: 10, z: 4, w: 10}
-  - {x: 4, y: 10, z: 4, w: 10}
-  - {x: 4, y: 10, z: 4, w: 10}
+  - {x: 25, y: 12, z: 20, w: 9}
+  - {x: 25, y: 12, z: 20, w: 9}
+  - {x: 10, y: 12, z: 10, w: 9}
