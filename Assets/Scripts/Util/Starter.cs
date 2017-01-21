@@ -45,7 +45,7 @@ public class Starter : MonoBehaviour
     void LateUpdate()
     {
         // Debug.Log("Application loadedlevel is " + Application.loadedLevel);
-        if (!_started)
+        if (!_started && _startedLevel != 0)
         {
             _started = true;
             SceneManager.LoadScene(0);
