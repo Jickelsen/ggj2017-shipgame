@@ -6,6 +6,7 @@ public class SlopeMovement : MonoBehaviour {
     public float Slipperyness;
     CharacterController _characterController;
     Rigidbody _rigidBody;
+    Transform _tiltReference;
 
 	// Use this for initialization
 	void Start () {
@@ -15,14 +16,17 @@ public class SlopeMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (_tiltReference == null) {
+            _tiltReference = GameObject.FindGameObjectWithTag("LevelRoot").transform;
+        }
 	
 	}
 
     void FixedUpdate()
     {
         RaycastHit hit;
-        Debug.DrawRay(transform.position - Vector3.up * 0.1f, -WaveManager.Instance.TiltReference.up);
-        if (Physics.Raycast(transform.position-Vector3.up*0.1f, -WaveManager.Instance.TiltReference.up, out hit)) {
+        Debug.DrawRay(transform.position - Vector3.up * 0.1f, -_tiltReference.up);
+        if (Physics.Raycast(transform.position-Vector3.up*0.1f, -_tiltReference.up, out hit)) {
             Vector3 horizontalVector = new Vector3(Slipperyness * hit.normal.x, 0f, Slipperyness * hit.normal.z);
             Vector3 projectedVector = Vector3.Project(horizontalVector, hit.normal);
             Vector3 groundVector = horizontalVector - projectedVector;

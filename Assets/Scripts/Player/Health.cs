@@ -15,7 +15,7 @@ public class Health : MonoBehaviour {
     }
     // Update is called once per frame
     void Update () {
-        Debug.Log("Health " + HealthAmount);
+        //Debug.Log("Health " + HealthAmount);
 	    if (HealthAmount <= 0) {
             LevelManager.Instance.RestartLevel();
         }
