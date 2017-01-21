@@ -24,6 +24,7 @@ GameObject:
   - 54: {fileID: 54000010812090938}
   - 82: {fileID: 82000011966468256}
   - 114: {fileID: 114000010682221504}
+  - 114: {fileID: 114000010044126740}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -242,6 +243,19 @@ MonoBehaviour:
   m_UserLutTexture: {fileID: 0}
   tonemapShader: {fileID: 4800000, guid: 964b34bbab7f5e64fa40f37eaccac1ad, type: 3}
   validRenderTextureFormat: 0
+--- !u!114 &114000010044126740
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010534920242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d89c611d75507ed4bbcb28843832175b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
+  HealthAmount: 100
 --- !u!114 &114000010099292404
 MonoBehaviour:
   m_ObjectHideFlags: 1
