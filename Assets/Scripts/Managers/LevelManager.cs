@@ -4,11 +4,12 @@ using System.Collections;
 // Handles level changes and notifies GeneralManager of level changes
 public class LevelManager : MonoBehaviour {
 
-    private int _currentLevel;
+    private int _currentLevel = 0;
 
 	// Use this for initialization
 	void Start () {
-        GeneralManager.Instance.OnLevelLoaded(0);
+        _currentLevel += 1;
+        LevelFade.LoadLevel(_currentLevel, 0.1f, 1f, Color.black);
 	}
 	
 	// Update is called once per frame
@@ -17,7 +18,12 @@ public class LevelManager : MonoBehaviour {
 	}
 
     public void NextLevel() {
-        LevelFade.LoadLevel(_currentLevel+1, 1f, 1f, Color.black);
+        _currentLevel += 1;
+        LevelFade.LoadLevel(_currentLevel, 1f, 1f, Color.black);
+    }
+
+    public void RestartLevel() {
+        LevelFade.LoadLevel(_currentLevel, 1f, 1f, Color.red);
     }
 
     private static LevelManager _instance = null;
