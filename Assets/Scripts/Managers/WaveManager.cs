@@ -10,11 +10,12 @@ public class WaveManager : MonoBehaviour {
     float _runningTime;
 
     public Transform RotatedObject;
+    public Transform TiltReference;
 
 
 	// Use this for initialization
 	void Start () {
-	    
+        TiltReference = GameObject.FindGameObjectWithTag("TiltReference").transform;
 	}
 	
 	// Update is called once per frame
@@ -28,7 +29,9 @@ public class WaveManager : MonoBehaviour {
         _runningTime += Time.deltaTime;
         //Debug.Log("Rot X " + newRotX + " Rot Z " + newRotZ);
         RotatedObject.Rotate(new Vector3(newRotX, 0f, 0f), Space.World);
+        TiltReference.Rotate(new Vector3(newRotX, 0f, 0f), Space.World);
         RotatedObject.Rotate(new Vector3(0f, 0f, newRotZ), Space.Self);
+        TiltReference.Rotate(new Vector3(0f, 0f, newRotZ), Space.Self);
 	}
 
     private static WaveManager _instance = null;
