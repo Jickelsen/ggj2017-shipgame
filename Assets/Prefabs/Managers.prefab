@@ -127,7 +127,6 @@ MonoBehaviour:
   AmplitudeZ: 0
   PeriodZ: 0
   RotatedObject: {fileID: 0}
-  TiltReference: {fileID: 0}
 --- !u!114 &114000011169546952
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -165,5 +164,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RunInEditMode: 0
   WavesAmpxPerxAmpzPerz:
-  - {x: 34, y: 12, z: 20, w: 9}
-  - {x: 90, y: 12, z: 90, w: 9}
+  - {x: 25, y: 12, z: 20, w: 9}
+  - {x: 25, y: 12, z: 20, w: 9}
+  - {x: 10, y: 12, z: 10, w: 9}

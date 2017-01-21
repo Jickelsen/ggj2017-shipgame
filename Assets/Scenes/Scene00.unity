@@ -97,11 +97,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114000013432410012, guid: e20caf505c778af479054daadd6a4bbb,
-        type: 2}
-      propertyPath: WavesAmpxPerxAmpzPerz.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4000011593768912, guid: e20caf505c778af479054daadd6a4bbb, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -133,46 +128,6 @@ Prefab:
     - target: {fileID: 4000011593768912, guid: e20caf505c778af479054daadd6a4bbb, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000010493247588, guid: e20caf505c778af479054daadd6a4bbb,
-        type: 2}
-      propertyPath: RotatedObject
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013432410012, guid: e20caf505c778af479054daadd6a4bbb,
-        type: 2}
-      propertyPath: WavesAmpxPerxAmpzPerz.Array.data[0].x
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013432410012, guid: e20caf505c778af479054daadd6a4bbb,
-        type: 2}
-      propertyPath: WavesAmpxPerxAmpzPerz.Array.data[1].x
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013432410012, guid: e20caf505c778af479054daadd6a4bbb,
-        type: 2}
-      propertyPath: WavesAmpxPerxAmpzPerz.Array.data[1].z
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013432410012, guid: e20caf505c778af479054daadd6a4bbb,
-        type: 2}
-      propertyPath: WavesAmpxPerxAmpzPerz.Array.data[2].x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013432410012, guid: e20caf505c778af479054daadd6a4bbb,
-        type: 2}
-      propertyPath: WavesAmpxPerxAmpzPerz.Array.data[2].y
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013432410012, guid: e20caf505c778af479054daadd6a4bbb,
-        type: 2}
-      propertyPath: WavesAmpxPerxAmpzPerz.Array.data[2].z
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013432410012, guid: e20caf505c778af479054daadd6a4bbb,
-        type: 2}
-      propertyPath: WavesAmpxPerxAmpzPerz.Array.data[2].w
-      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e20caf505c778af479054daadd6a4bbb, type: 2}

@@ -32,6 +32,7 @@ public class Health : MonoBehaviour {
             float relativeSpeed = (Velocity - _hurter.Velocity).magnitude;
             //Debug.Log("Relative Speed " + relativeSpeed);
             if (relativeSpeed>=_hurter.SpeedToHurt) {
+                ScreenFade.FadeScreen(0.15f, 0.15f, Color.red);
                 HealthAmount -= _hurter.Damage;
             }
             _hurter = null;
