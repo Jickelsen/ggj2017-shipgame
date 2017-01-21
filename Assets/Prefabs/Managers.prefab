@@ -22,6 +22,7 @@ GameObject:
   - 114: {fileID: 114000010493247588}
   - 114: {fileID: 114000013432410012}
   - 114: {fileID: 114000012465236842}
+  - 114: {fileID: 114000011169546952}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -59,6 +60,18 @@ MonoBehaviour:
   AmplitudeZ: 0
   PeriodZ: 0
   RotatedObject: {fileID: 0}
+--- !u!114 &114000011169546952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010967237144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5227936aef839424690644abd04f4770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
 --- !u!114 &114000012465236842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -86,4 +99,5 @@ MonoBehaviour:
   m_RunInEditMode: 0
   WaveManager: {fileID: 114000010493247588}
   WavesAmpxPerxAmpzPerz:
-  - {x: 35, y: 5, z: 30, w: 8}
+  - {x: 15, y: 12, z: 20, w: 9}
+  - {x: 90, y: 12, z: 90, w: 9}
