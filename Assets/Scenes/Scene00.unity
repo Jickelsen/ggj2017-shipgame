@@ -187,6 +187,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013432410012, guid: e20caf505c778af479054daadd6a4bbb,
+        type: 2}
+      propertyPath: WavesAmpxPerxAmpzPerz.Array.data[1].x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013432410012, guid: e20caf505c778af479054daadd6a4bbb,
+        type: 2}
+      propertyPath: WavesAmpxPerxAmpzPerz.Array.data[1].z
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e20caf505c778af479054daadd6a4bbb, type: 2}
   m_IsPrefabParent: 0

@@ -15,6 +15,7 @@ public class PlaySoundOnAcc : MonoBehaviour {
     private void Awake()
     {
         _audioSource = gameObject.AddComponent<AudioSource>();
+        _audioSource.volume = 0.35f;
     }
     // Use this for initialization
     void Start () {
