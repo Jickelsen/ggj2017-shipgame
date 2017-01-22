@@ -48,6 +48,7 @@ GameObject:
   - 114: {fileID: 114000012605202426}
   - 114: {fileID: 114000012533397514}
   - 114: {fileID: 114000012572778948}
+  - 114: {fileID: 114000010944512938}
   m_Layer: 0
   m_Name: RigidBodyPlayer
   m_TagString: Player
@@ -153,6 +154,19 @@ MonoBehaviour:
   strengthX: 0
   strengthY: 0
   fishEyeShader: {fileID: 4800000, guid: 874ceab4425f64bccb1d14032f4452b1, type: 3}
+--- !u!114 &114000010944512938
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010741227426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c6caba76746bf64bbb5d5b4bb04eb3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
+  DrunkDuration: 6
 --- !u!114 &114000011635790364
 MonoBehaviour:
   m_ObjectHideFlags: 1
