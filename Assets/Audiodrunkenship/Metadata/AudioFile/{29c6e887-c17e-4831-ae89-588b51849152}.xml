@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.07.00">
+    <object class="AudioFile" id="{29c6e887-c17e-4831-ae89-588b51849152}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>4</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/rum {ee0de3a0-5b4b-41cd-9ce2-78fe20e7e5bf}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{ab77705a-3170-4fb5-8e8c-65de85c6dcb6}</destination>
+        </relationship>
+    </object>
+</objects>

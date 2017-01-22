@@ -5,7 +5,7 @@
             <value>Fotsteg</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>0</value>
         </property>
         <relationship name="mixer">
             <destination>{dddfd246-f493-481b-8f29-d51e40c8b9dc}</destination>
@@ -234,7 +234,6 @@
     <object class="MixerBusEffectChain" id="{ac631148-2a51-45f9-8194-d99ef0d3e274}">
         <relationship name="effects">
             <destination>{fcb9e503-e386-4cff-b8cc-b269aee4a882}</destination>
-            <destination>{28a4f889-725a-4210-bf1e-cc675bb82c24}</destination>
             <destination>{7b5ddb24-4ec4-4957-b371-4aec20bead32}</destination>
         </relationship>
     </object>
@@ -341,10 +340,9 @@
         </property>
     </object>
     <object class="MixerBusFader" id="{fcb9e503-e386-4cff-b8cc-b269aee4a882}"/>
-    <object class="SpatialiserEffect" id="{28a4f889-725a-4210-bf1e-cc675bb82c24}"/>
     <object class="MixerSend" id="{7b5ddb24-4ec4-4957-b371-4aec20bead32}">
         <property name="inputFormat">
-            <value>2</value>
+            <value>0</value>
         </property>
         <relationship name="mixerReturn">
             <destination>{4242f6a0-64d7-46a2-9fb3-61b2af353b4e}</destination>
