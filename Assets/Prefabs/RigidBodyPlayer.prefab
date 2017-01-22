@@ -76,7 +76,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010741227426}
   m_LocalRotation: {x: -0, y: -0.09158518, z: -0, w: -0.9957973}
-  m_LocalPosition: {x: -1.3, y: 0.581, z: -23.3}
+  m_LocalPosition: {x: -1.3, y: 0.504, z: -23.3}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_LocalEulerAnglesHint: {x: 0, y: 10.247001, z: 0}
   m_Children:
@@ -289,12 +289,12 @@ MonoBehaviour:
   m_RunInEditMode: 0
   cam: {fileID: 20000014153639022}
   movementSettings:
-    ForwardSpeed: 16
-    BackwardSpeed: 8
-    StrafeSpeed: 8
-    RunMultiplier: 0
+    ForwardSpeed: 20
+    BackwardSpeed: 16
+    StrafeSpeed: 16
+    RunMultiplier: 2
     RunKey: 304
-    JumpForce: 100
+    JumpForce: 125
     SlopeCurveModifier:
       serializedVersion: 2
       m_Curve:
@@ -402,7 +402,7 @@ CapsuleCollider:
   m_Material: {fileID: 13400000, guid: c2815a7ab32e42c4bb42f59caacb8ec1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.4
   m_Height: 1.6
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}

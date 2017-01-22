@@ -56,7 +56,10 @@ public class LevelManager : MonoBehaviour {
     public void RestartLevel() {
         LevelFade.LoadLevel(_currentLevel, 1f, 1f, Color.red);
     }
-
+    public void CompletedGame()
+    {
+        LevelFade.LoadLevel(_currentLevel, 2f, 2f, Color.green);
+    }
     private static LevelManager _instance = null;
 
     public static LevelManager Instance
