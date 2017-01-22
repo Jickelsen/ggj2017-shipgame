@@ -10,17 +10,20 @@ public class PlayStingerOnAcc : MonoBehaviour {
 
     public string ParameterName;
     public float AccelerationToMakeSound;
+    public float volume = 0.5f;
     Vector3 _velocity;
     Vector3 _acceleration;
     Vector3 _lastPos;
     Vector3 _lastVelocity;
+    private bool playing = false;
 
     // Use this for initialization
     void Start () {
         _lastPos = transform.position;
-
+        
         stingersEv = FMODUnity.RuntimeManager.CreateInstance(stingers);
         stingersEv.getParameter(ParameterName, out param);
+        stingersEv.setVolume(volume);
         stingersEv.start();
 	}
 
@@ -33,7 +36,7 @@ public class PlayStingerOnAcc : MonoBehaviour {
         _acceleration = (_velocity - _lastVelocity) / Time.deltaTime;
         //Debug.Log("Acceleration " + _acceleration.magnitude);
         //_acceleration = Vector3.Lerp(lastAcceleration, _acceleration, Time.deltaTime);
-        if (_acceleration.magnitude >= AccelerationToMakeSound) {
+        if (_acceleration.magnitude >= AccelerationToMakeSound && !playing) {
             StartCoroutine(PlaySound());
         }
         _lastPos = transform.position;
@@ -41,9 +44,11 @@ public class PlayStingerOnAcc : MonoBehaviour {
     }
 
     IEnumerator PlaySound() {
+        playing = true;
         param.setValue(1f);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.75f);
         param.setValue(0f);
+        playing = false;
     }
 
 }
