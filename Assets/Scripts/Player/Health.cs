@@ -19,7 +19,7 @@ public class Health : MonoBehaviour {
     private void Start() {
         _lastPos = transform.position;
         CharacterController _controller = GetComponent<CharacterController>();
-
+        HealthDisplay = GameObject.Find("Health Text").GetComponent<Text>();
         stingersEv = FMODUnity.RuntimeManager.CreateInstance(stingers);
         stingersEv.getParameter("hit", out hitParam);
         stingersEv.start();
