@@ -26,6 +26,7 @@ GameObject:
   - 114: {fileID: 114000012131831180}
   - 114: {fileID: 114000011635790364}
   - 114: {fileID: 114000010343581900}
+  - 114: {fileID: 114000011721268018}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -74,8 +75,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010741227426}
   m_LocalRotation: {x: -0, y: -0.09158518, z: -0, w: -0.9957973}
-  m_LocalPosition: {x: -1.05, y: 0.903, z: -43}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: -1.3, y: 0.581, z: -23.3}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_LocalEulerAnglesHint: {x: 0, y: 10.247001, z: 0}
   m_Children:
   - {fileID: 4000010683258572}
@@ -97,9 +98,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
+  near clip plane: 0.01
+  far clip plane: 400
+  field of view: 90
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -173,6 +174,18 @@ MonoBehaviour:
   edgesOnly: 0.543
   edgesOnlyBgColor: {r: 0.07688149, g: 0.13235295, b: 0.12546684, a: 1}
   edgeDetectShader: {fileID: 4800000, guid: 0d1644bdf064147baa97f235fc5b4903, type: 3}
+--- !u!114 &114000011721268018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010473655578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
 --- !u!114 &114000012131831180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -246,6 +259,8 @@ MonoBehaviour:
   m_RunInEditMode: 0
   HealthAmount: 100
   Velocity: {x: 0, y: 0, z: 0}
+  HealthDisplay: {fileID: 0}
+  stingers: event:/Stingers
 --- !u!114 &114000012995141238
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -301,7 +316,7 @@ MonoBehaviour:
     groundCheckDistance: 0.3
     stickToGroundHelperDistance: 0.6
     slowDownRate: 20
-    airControl: 0
+    airControl: 1
     shellOffset: 0
 --- !u!114 &114000013222276078
 MonoBehaviour:
