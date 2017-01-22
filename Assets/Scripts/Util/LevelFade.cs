@@ -85,7 +85,6 @@ public class LevelFade : MonoBehaviour
         }
         //Debug.Log("AutoFade: Fadout is done");
         LevelManager.Instance.SetLevel(m_LevelIndex);
-        GeneralManager.Instance.OnLevelLoaded(m_LevelIndex);
         //Debug.Log("AutoFade: Level loaded");
         int counter = 0;
         while (counter < 40)

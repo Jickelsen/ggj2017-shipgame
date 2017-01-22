@@ -39,6 +39,7 @@ public class Starter : MonoBehaviour
     IEnumerator ResetTolevel(int pIndex) {
         _resetToLevel = true;
         yield return new WaitForSeconds(0.5f);
+        Debug.Log("Resetting to level" + pIndex);
         LevelManager.Instance.SetLevel(pIndex);
     }
 

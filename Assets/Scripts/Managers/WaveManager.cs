@@ -15,15 +15,21 @@ public class WaveManager : MonoBehaviour {
 	void Update () {
         if (RotatedObject == null)
         {
-            RotatedObject = GameObject.FindGameObjectWithTag("LevelRoot").transform;
+            GameObject rotated = GameObject.FindGameObjectWithTag("LevelRoot");
+            if (rotated != null)
+            {
+            RotatedObject = rotated.transform;
+            } 
             _runningTime = 0f;
         }
         float newRotX = AmplitudeX * (Mathf.Sin(2*Mathf.PI*(_runningTime + Time.deltaTime)/PeriodX)-Mathf.Sin(2*Mathf.PI*_runningTime/PeriodX));
         float newRotZ = AmplitudeZ * (Mathf.Sin(2*Mathf.PI*(_runningTime + Time.deltaTime)/PeriodZ)-Mathf.Sin(2*Mathf.PI*_runningTime/PeriodZ));
         _runningTime += Time.deltaTime;
         //Debug.Log("Rot X " + newRotX + " Rot Z " + newRotZ);
-        RotatedObject.Rotate(new Vector3(newRotX, 0f, 0f), Space.World);
-        RotatedObject.Rotate(new Vector3(0f, 0f, newRotZ), Space.Self);
+        if (RotatedObject != null) {
+            RotatedObject.Rotate(new Vector3(newRotX, 0f, 0f), Space.World);
+            RotatedObject.Rotate(new Vector3(0f, 0f, newRotZ), Space.Self);
+        }
 	}
 
     private static WaveManager _instance = null;

@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RunInEditMode: 0
+  TitleScreenDelay: 5
 --- !u!114 &114000013432410012
 MonoBehaviour:
   m_ObjectHideFlags: 1

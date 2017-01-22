@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour {
 
     private int _currentLevel = 0;
+    public float TitleScreenDelay;
+
+
     public int LoadedLevel
     {
         get
@@ -19,9 +22,18 @@ public class LevelManager : MonoBehaviour {
     }
 	// Use this for initialization
 	void Awake () {
+        StartCoroutine(DelayOnTitleSceen(TitleScreenDelay));
+	}
+
+    IEnumerator DelayOnTitleSceen(float pDelayTime) {
+        yield return new WaitForSeconds(pDelayTime);
+        if (_currentLevel == 0)
+        {
         _currentLevel += 1;
         LevelFade.LoadLevel(_currentLevel, 0.1f, 1f, Color.black);
-	}
+        }
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -31,6 +43,7 @@ public class LevelManager : MonoBehaviour {
     public void SetLevel(int pIndex) {
         _currentLevel = pIndex;
         Debug.Log("Set level " + pIndex);
+        GeneralManager.Instance.OnLevelLoaded(pIndex);
         SceneManager.LoadScene(pIndex);
     }
 
