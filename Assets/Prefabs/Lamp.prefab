@@ -173,7 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RunInEditMode: 0
   stingers: event:/Stingers
-  ParameterName: Dooropen
+  ParameterName: Lamps
   AccelerationToMakeSound: 1000
 --- !u!135 &135000013566549126
 SphereCollider:
