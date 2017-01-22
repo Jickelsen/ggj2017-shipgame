@@ -23,7 +23,7 @@ MonoBehaviour:
   - {fileID: 114000013725556000}
   - {fileID: 114000010073960756}
   MasterBankRef: {fileID: 114000010234970320}
-  stringsBankWriteTime: 636206395550250546
+  stringsBankWriteTime: 636206826036404450
 --- !u!114 &114000010073960756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,12 +66,27 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114000011040027018}
-  - {fileID: 114000013640246412}
-  - {fileID: 114000012257536564}
-  - {fileID: 114000012850281690}
+  - {fileID: 114000013990677384}
+  - {fileID: 114000013015958882}
+  - {fileID: 114000012335517660}
+  - {fileID: 114000010516924160}
   MinDistance: 1
   MaxDistance: 20
+--- !u!114 &114000010153122046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
+  Name: Golv/metall
+  Min: 0
+  Max: 1
 --- !u!114 &114000010234970320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RunInEditMode: 0
   Path: Assets\Audiodrunkenship\Build\Desktop\Master Bank.bank
-  lastModified: 636206395550090514
+  lastModified: 636206826036349266
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -113,6 +128,21 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
+--- !u!114 &114000010516924160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
+  Name: Lamps
+  Min: 0
+  Max: 1
 --- !u!114 &114000010602401362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,7 +178,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114000011622550710}
+  - {fileID: 114000012697689904}
   MinDistance: 0
   MaxDistance: 0
 --- !u!114 &114000011040027018
@@ -201,7 +231,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114000012893414764}
+  - {fileID: 114000014139442498}
   MinDistance: 0
   MaxDistance: 0
 --- !u!114 &114000011622550710
@@ -264,6 +294,21 @@ MonoBehaviour:
   Name: Furniture
   Min: 0
   Max: 1
+--- !u!114 &114000012335517660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
+  Name: Furniture
+  Min: 0
+  Max: 1
 --- !u!114 &114000012451071250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,9 +329,24 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114000011924030114}
+  - {fileID: 114000013620759166}
   MinDistance: 0
   MaxDistance: 0
+--- !u!114 &114000012697689904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
+  Name: Lampintensitet
+  Min: 0
+  Max: 1
 --- !u!114 &114000012807544180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,6 +407,21 @@ MonoBehaviour:
   Name: inomhus
   Min: 0
   Max: 1
+--- !u!114 &114000013015958882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
+  Name: Dooropen
+  Min: 0
+  Max: 1
 --- !u!114 &114000013046220930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,6 +450,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RunInEditMode: 0
   Name: Golv/metall
+  Min: 0
+  Max: 1
+--- !u!114 &114000013620759166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
+  Name: Drunken
   Min: 0
   Max: 1
 --- !u!114 &114000013640246412
@@ -412,6 +502,36 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114000011272567782}
+  - {fileID: 114000010153122046}
   MinDistance: 0
   MaxDistance: 0
+--- !u!114 &114000013990677384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
+  Name: Hit
+  Min: 0
+  Max: 1
+--- !u!114 &114000014139442498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
+  Name: inomhus
+  Min: 0
+  Max: 1

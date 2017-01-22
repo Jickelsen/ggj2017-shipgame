@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour {
 
@@ -9,6 +9,7 @@ public class Health : MonoBehaviour {
     public Vector3 Velocity;
     Vector3 _lastPos;
     Hurter _hurter = null;
+    public Text HealthDisplay;
 
     [FMODUnity.EventRef]
     public string stingers = "event:/Stingers";       //Create the eventref and define the event path
@@ -22,6 +23,7 @@ public class Health : MonoBehaviour {
         stingersEv = FMODUnity.RuntimeManager.CreateInstance(stingers);
         stingersEv.getParameter("hit", out hitParam);
         stingersEv.start();
+        HealthDisplay.text = "HEALTH: " + HealthAmount.ToString() + "%";
     }
     // Update is called once per frame
     void Update () {
@@ -44,6 +46,7 @@ public class Health : MonoBehaviour {
             if (relativeSpeed>=_hurter.SpeedToHurt) {
                 ScreenFade.FadeScreen(0.15f, 0.15f, Color.red);
                 HealthAmount -= _hurter.Damage;
+                HealthDisplay.text = "HEALTH: " + HealthAmount.ToString() + "%";
                 StartCoroutine(PlayHitSound());
             }
             _hurter = null;
