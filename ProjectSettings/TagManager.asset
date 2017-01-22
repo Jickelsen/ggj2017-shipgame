@@ -9,6 +9,7 @@ TagManager:
   - VRPlayer
   - LevelRoot
   - TiltReference
+  - Drink
   layers:
   - Default
   - TransparentFX
