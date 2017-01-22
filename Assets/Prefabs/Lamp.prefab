@@ -24,6 +24,7 @@ GameObject:
   - 23: {fileID: 23000013005947832}
   - 54: {fileID: 54000012583574330}
   - 145: {fileID: 145000013741984054}
+  - 114: {fileID: 114000013558464692}
   m_Layer: 0
   m_Name: Lamp
   m_TagString: Untagged
@@ -159,6 +160,21 @@ Light:
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114000013558464692
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011326062292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85840aa89097ccc42b2a338cc44a1ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
+  stingers: event:/Stingers
+  ParameterName: Lamps
+  AccelerationToMakeSound: 1000
 --- !u!135 &135000013566549126
 SphereCollider:
   m_ObjectHideFlags: 1

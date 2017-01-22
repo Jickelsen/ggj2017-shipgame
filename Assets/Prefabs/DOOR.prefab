@@ -22,6 +22,7 @@ GameObject:
   - 33: {fileID: 33000012092893668}
   - 23: {fileID: 23000013754827076}
   - 135: {fileID: 135000012673009454}
+  - 114: {fileID: 114000013711272560}
   m_Layer: 0
   m_Name: doortleft.030
   m_TagString: Untagged
@@ -56,8 +57,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011064789210}
   m_LocalRotation: {x: 0.15298496, y: 0.15298493, z: 0.690359, w: 0.6903591}
-  m_LocalPosition: {x: -0.73479, y: 1.339, z: 16.918}
-  m_LocalScale: {x: 127.920364, y: 127.920494, z: 127.92038}
+  m_LocalPosition: {x: -0.5339, y: 1.3975, z: 14.948}
+  m_LocalScale: {x: 140.50488, y: 140.50497, z: 140.50482}
   m_LocalEulerAnglesHint: {x: 0, y: 24.820002, z: 90.00001}
   m_Children:
   - {fileID: 4000012811335070}
@@ -173,7 +174,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: -0.000013723038, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.002170687, y: -0.0152723, z: -0.0036013194}
+  m_ConnectedAnchor: {x: -0.0025760261, y: 0.017455375, z: 0.0048842295}
   m_UseSpring: 1
   m_Spring:
     spring: 10
@@ -207,6 +208,21 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 1
   m_Mesh: {fileID: 4300080, guid: 99bd19fa3e78d614d88df115e7b75a1a, type: 3}
+--- !u!114 &114000013711272560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010076753452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85840aa89097ccc42b2a338cc44a1ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
+  stingers: event:/Stingers
+  ParameterName: Dooropen
+  AccelerationToMakeSound: 150
 --- !u!135 &135000012673009454
 SphereCollider:
   m_ObjectHideFlags: 1

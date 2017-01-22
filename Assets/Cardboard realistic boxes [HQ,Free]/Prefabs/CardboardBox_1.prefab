@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3300720}
   - 23: {fileID: 2388372}
   - 114: {fileID: 114000011199905648}
+  - 114: {fileID: 114000013611147352}
   m_Layer: 0
   m_Name: CardboardBox_1
   m_TagString: Untagged
@@ -93,3 +94,18 @@ MonoBehaviour:
   Damage: 10
   SpeedToHurt: 0
   Velocity: {x: 0, y: 0, z: 0}
+--- !u!114 &114000013611147352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 188068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85840aa89097ccc42b2a338cc44a1ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
+  stingers: event:/Stingers
+  ParameterName: Furniture
+  AccelerationToMakeSound: 1000
